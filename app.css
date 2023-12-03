@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.frame-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.frame {
+    flex: 1;
+    border: none;
+}
+
+.frame:first-child {
+    flex: 0 0 33.33%;
+}
+
+.user-header{
+    background-color: #7ea0ff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align input and button to the end */
+    width: calc(100% - 2%);
+    position: fixed; /* Stick to the bottom */
+    top: 0; /* Stick to the bottom */
+    left: 0; /* Stick to the left */
+    padding: 20px 40px; /* Add some padding */
+    border-bottom: 1px solid #ccc; /* Add a border */
+    color: rgb(17, 19, 34);
+    margin-top:0;
+}
+.chat-container {
+    background-color: #a6c2ff;
+    width: calc(100% - 2%);
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align messages to the start */
+    justify-content: flex-end; /* Align messages to the start */
+    margin-top: 60px;
+
+}
+#chat-messages{
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% - 2%);
+    padding: 10px 20px;
+    margin-bottom: 36px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column; /* Change to column */
+}
+
+.msg-right {
+    display: flex;
+    align-items: flex-end; /* Align messages to the end */
+    margin-left: auto;
+    background-color: #e2f2ff;
+    padding: 5px;
+    margin-right: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.msg-left {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin-bottom: 5px;
+    width:fit-content;
+    border-radius: 5px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.timestamp {
+    margin-top: 5px; /* Add margin-top */
+    color: #999;
+    align-items: flex-end;
+}
+#message-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; /* Align input and button to the end */
+    width: calc(100% - 2%);
+    position: fixed; /* Stick to the bottom */
+    bottom: 0; /* Stick to the bottom */
+    left: 0; /* Stick to the left */
+    padding: 10px; /* Add some padding */
+    background-color: #fff; /* Set background color */
+    border-top: 1px solid #ccc; /* Add a border */
+    
+    padding-bottom: 0.8rem;
+    background-color: #7ea0ff;
+}
+
+#message-form input[type="text"] {
+    background-color: transparent;
+    color:whitesmoke;
+    flex: 1;
+    border-radius: 3px;
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+::placeholder {
+    color: whitesmoke;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: whitesmoke;
+  }
+
+#message-form button {
+    color: white;
+    background-color: rgb(19, 192, 106);
+    border:none;
+    border-radius: 3px;
+    
+    margin: auto 10px;
+    padding: 10px 15px; /* Add some padding */
+}
+#message-form button:hover {
+    background-color: rgb(9, 107, 58);
+}
+
+
+
+
+
+
+
+
+.user{
+    background-color: #4274ff;
+    margin: 0.8em;
+}
+
+.header {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: #7ea0ff 1px solid;
+    color: rgb(17, 19, 34)
+}
+.header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.usernamebox{
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    background-color: #7ea0ff;
+    color: rgb(17, 19, 34);
+    margin-bottom: 0.5em;
+}
+
+.usernamebox:hover{
+    background-color: #a6c2ff;
+}
+
+

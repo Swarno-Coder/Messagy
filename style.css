@@ -1,0 +1,97 @@
+body {
+    font-family: "Roboto";
+    background-color: #4274ff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 325px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    float: left;
+    color :rgba(255, 255, 255, 0.9);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background-color: #1aec21d2;
+    font-weight: bolder;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.new-account {
+    margin-top: 15px;
+}
+
+.new-account a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+    font-family: "Poppins";
+}
+
+.signup-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}

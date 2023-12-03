@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./chatico.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="./login.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter the username...">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter the password...">
+            </div>
+            <button type="submit" class="login-btn" name="login">Login</button>
+        </form>
+        <div class="new-account">
+            <p>Don't have an account? <a href="./createacc.html">Create New Account</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
